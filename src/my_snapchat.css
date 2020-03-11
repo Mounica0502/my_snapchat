@@ -1,0 +1,204 @@
+@keyframes img {
+    from {
+        left: 93%;
+    }
+
+    to {
+        transform: rotate(360deg);
+        left: 0%;
+    }
+}
+
+@keyframes rotate {
+    0% { 
+        transform: rotate(5deg); 
+    } 
+    
+    100% { 
+        transform: rotate(-5deg); 
+    }
+}
+
+@keyframes zoom {
+    0% { 
+        transform: scale(1); 
+    } 
+    
+    100% { 
+        transform: scale(1.3); 
+    }
+}
+
+body {
+    background: url('assets/orig_223970.jpg') center center fixed no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+nav {
+    border-bottom: solid 1px grey;
+}
+
+.form_class {
+    text-align: center;
+    margin-top: 4%;
+}
+
+.form {
+    display: inline-block;
+    padding: 30px;
+    border: solid 1px grey;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-shadow: -1px -1px #000, 1px 1px #000, -3px 0 4px #000;
+    color: white;
+}
+
+.color_nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* background-color: rgb(117, 9, 117) */
+
+}
+
+.lien {
+    text-shadow: -1px -1px #000, 1px 1px #000, -3px 0 4px #000;
+}
+
+.lien:hover {
+    font-size: 20px;
+}
+
+.titre_home {
+    text-align: center;
+    margin-top: 3%;
+    text-shadow: -1px -1px #000, 1px 1px #000, -3px 0 4px #000;
+    color: white;
+}
+
+.img {
+    position: relative;
+    margin-top: 27%;
+    animation: img 3s alternate infinite;
+}
+
+.div_liste {
+    text-align: center;
+}
+
+.block_liste {
+    margin-top: 2%;
+}
+
+.liste li{
+    margin-top: 0.7%;
+    text-shadow: -1px -1px #000, 1px 1px #000, -3px 0 4px #000;
+    color: white;
+    border: solid 1px grey;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    list-style: inside url('assets/logo.png');
+}
+
+.form_snap {
+    text-align: center;
+}
+
+.contenue {
+    margin-top: 1%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 50px;
+    border: solid 1px grey;
+    border-radius: 5px;
+}
+
+.preview {
+    margin-top: 2%;
+}
+
+.preview img {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid 1px grey;
+    border-radius: 5px;
+    width: 100%;
+    height: 360px;
+}
+
+.titre_webcam {
+    text-align: center;
+    text-shadow: -1px -1px #000, 1px 1px #000, -3px 0 4px #000;
+    color: white;
+    animation: rotate 2s alternate infinite;
+}
+
+.img_screen {
+    height: 300px;
+    width: 100%;
+    background: url('assets/selfie.png') center center no-repeat;
+    background-size: cover;
+}
+
+.btnn {
+    margin-left: -2%;
+}
+
+.web {
+    height: 300px;
+    width: 100%;
+}
+
+.div_display {
+    text-align: center;
+    margin-top: 3%;
+    color: white;
+    text-shadow: -1px -1px #000, 1px 1px #000, -3px 0 4px #000;
+}
+
+.a_user {
+    text-shadow: 0px 0px 1px black;
+    color: blue;
+    font-size: 18px;
+    /* text-shadow: none; */
+}
+
+.a_user:hover {
+    font-size: 20px;
+}
+
+.liste_user {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid 1px grey;
+    border-radius: 5px;
+}
+
+.show_img {
+    text-align: center;
+}
+
+.loader {
+    margin-top: 20%;
+    margin-left: 47.5%;
+    color: red;
+}
+
+.apulimage {
+    display: inline-block;
+    margin-top: 5%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid 1px grey;
+    border-radius: 5px;
+    animation: zoom 1s alternate infinite;
+}
+
+.lien_apu {
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+    text-shadow: -1px -1px #000, 1px 1px #000, -3px 0 4px #000;
+}
+
+/* .lien_apu:hover {
+    color: 
+} */

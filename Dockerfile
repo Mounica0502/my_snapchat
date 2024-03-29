@@ -1,18 +1,14 @@
-# Use the official Nginx image as base image
-FROM nginx:latest
-
-
-
-# Copy package.json and package-lock.json to install dependencies
-COPY package*.json ./
-
-
-# Copy the rest of the application files to the container
+FROM node:16.17.0-alpine as builder
+WORKDIR /app
+COPY ./package.json .
+COPY ./yarn.lock .
+RUN yarn install
 COPY . .
 
-# Expose port 80 for web traffic
+
+FROM nginx:stable-alpine
+WORKDIR /usr/share/nginx/html
+RUN rm -rf ./*
+COPY --from=builder /app/dist .
 EXPOSE 80
-
-
-# Start Nginx when the container launches
-CMD ["nginx", "-g", "daemon off;"]
+ENTRYPOINT ["nginx", "-g", "daemon off;"]

@@ -11,7 +11,7 @@ COPY package*.json ./
 COPY . .
 
 # Expose port 80 for web traffic
-EXPOSE 80
+EXPOSE 3000
 
 
 # Start Nginx when the container launches

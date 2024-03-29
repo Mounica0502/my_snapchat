@@ -5,10 +5,3 @@ COPY ./yarn.lock .
 RUN yarn install
 
 
-
-FROM nginx:stable-alpine
-WORKDIR /usr/share/nginx/html
-RUN rm -rf ./*
-
-EXPOSE 80
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
